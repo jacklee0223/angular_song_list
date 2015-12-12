@@ -1,0 +1,24 @@
+{
+  "name": "angular_song_list",
+  "version": "1.0.0",
+  "description": "Angular app for displaying songs",
+  "main": "server.js",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacklee0223/angular_song_list.git"
+  },
+  "author": "Jeong Min Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacklee0223/angular_song_list/issues"
+  },
+  "homepage": "https://github.com/jacklee0223/angular_song_list#readme"
+}
