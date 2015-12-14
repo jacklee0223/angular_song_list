@@ -1,1 +1,1 @@
-var app = angular.module("songApp", []);
+var app = angular.module("songsApp", []);

@@ -1,7 +1,7 @@
 // get packages
-var express = require('express');
-var app = express();
-var path = require('path');
+var express = require('express'),
+    app = express(),
+    path = require('path');
 
 // set the public folder to serve public assets
 app.use(express.static(__dirname + '/public'));

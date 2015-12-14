@@ -1,6 +1,4 @@
-app.controller('MainController', ['$scope', function($scope) {
-  $scope.title = 'Song List';
-  $scope.songs = [
+[
    {
       "active":1,
       "artist":{
@@ -744,5 +742,3 @@ app.controller('MainController', ['$scope', function($scope) {
       "objectId":"Fbf22RTsvA"
    }
 ]
-
-}]);
