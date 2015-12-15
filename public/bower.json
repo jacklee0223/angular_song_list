@@ -1,0 +1,23 @@
+{
+  "name": "public",
+  "homepage": "https://github.com/jacklee0223/angular_song_list",
+  "authors": [
+    "bash <(wget -qO- https://raw.githubusercontent.com/ga-instructors/installfest_script/master/builds/ubuntu) bash <(wget -qO- https://raw.githubusercontent.com/ga-instructors/installfest_script/master/builds/ubuntu) <jacklee0223@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.8",
+    "angular-bootstrap": "~0.14.3"
+  }
+}
