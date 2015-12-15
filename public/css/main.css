@@ -1,0 +1,13 @@
+.song_thumbnail {
+  background-color: coral;
+  width: 20%;
+  height: 20%;
+  display: inline-block;
+  margin: 10px 0;
+  border-radius: 5px; }
+  .song_thumbnail img {
+    width: 100%; }
+  .song_thumbnail .textbox {
+    height: 20%; }
+
+/*# sourceMappingURL=main.css.map */

@@ -6,14 +6,18 @@
   <title>Song List App</title>
   <!-- Bower Dependencies -->
   <script src="lib/angular/angular.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-animate.js"></script>
+  <script src="lib/angular-animate/angular-animate.js"></script>
+  <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
   <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
   <script src="lib/jquery/dist/jquery.js"></script>
-  <!-- Stylesheet -->
+  <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
   <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body ng-app="songsApp">
+  <navbar></navbar>
+
   <div ng-controller="MainController">
     <div ng-controller="DropdownCtrl">
       <div class="btn-group" uib-dropdown is-open="status.isopen">
@@ -21,15 +25,20 @@
           Button dropdown <span class="caret"></span>
         </button>
         <ul class="uib-dropdown-menu" role="menu" aria-labelledby="single-button">
-          <li role="menuitem" ng-repeat="song in songs"><a href="#"><p>{{ song.artist.name }}</p></a></li>
+          <!-- <li role="menuitem" ng-repeat="song in songs"><a href="#"><p>{{ song.artist.name }}</p></a></li> -->
+          <li role="menuitem"><a href="#"> Newest </a></li>
+          <li role="menuitem"><a href="#"> Easiest </a></li>
+          <li role="menuitem"><a href="#"> Hardest </a></li>
 
         </ul>
       </div>
     </div>
     <h1>{{ title }}</h1>
-    <div ng-repeat="song in songs">
+    <div class="col-md-8 outside_box">
+      <div class="song_thumbnail" ng-repeat="song in songs">
 
-      <song-info info="song"></song-info>
+        <song-info info="song"></song-info>
+      </div>
     </div>
   </div>
   <test></test>
@@ -43,5 +52,6 @@
 
 <!-- Directives -->
   <script src="js/directives/songInfo.js"></script>
+  <script src="js/directives/navbar.js"></script>
 </body>
 </html>
