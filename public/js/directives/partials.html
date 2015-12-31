@@ -1,0 +1,17 @@
+  <script type="text/ng-template" id="byEasy">
+    <div class="col-md-8 outside_box">
+      <div class="song_thumbnail" ng-repeat="song in songs | orderBy:'difficulty'">
+
+        <song-info info="song"></song-info>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="byNew">
+    <div class="col-md-8 outside_box">
+      <div class="song_thumbnail" ng-repeat="song in songs | orderBy:'createdAt'">
+
+        <song-info info="song"></song-info>
+      </div>
+    </div>
+  </script>
