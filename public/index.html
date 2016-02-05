@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body ng-app="songsApp">
-  <navbar></navbar>
+  <div class="header"></div>
 
   <div ng-controller="MainController">
     <div ng-controller="DropdownCtrl">
@@ -25,7 +25,6 @@
           Button dropdown <span class="caret"></span>
         </button>
         <ul class="uib-dropdown-menu" role="menu" aria-labelledby="single-button">
-          <!-- <li role="menuitem" ng-repeat="song in songs"><a href="#"><p>{{ song.artist.name }}</p></a></li> -->
           <li role="menuitem"><button ng-click="template='byNew'"> Newest </button></li>
           <li role="menuitem" ng-click="template='byEasy'"><a href="#"> Easiest </a></li>
           <li role="menuitem"><a href="#"> Hardest </a></li>
@@ -40,9 +39,9 @@
         <song-info info="song"></song-info>
       </div>
     </div> -->
-  <button ng-click="template='byEasy'">Sort by Easiness</button>
-  <button ng-click="template='byNew'">SortbyNew</button>
-  <ng-include src="template"></ng-include>
+    <button ng-click="template='byEasy'">Sort by Easiness</button>
+    <button ng-click="template='byNew'">SortbyNew</button>
+    <ng-include src="template"></ng-include>
 
 
         <!-- <song-info info="song"></song-info> -->
